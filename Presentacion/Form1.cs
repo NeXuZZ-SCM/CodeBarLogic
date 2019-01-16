@@ -22,19 +22,12 @@ namespace Presentacion
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text != "")
-            {
+
                 BarcodeWriter br = new BarcodeWriter();
                 br.Format = BarcodeFormat.CODE_128;
                 Bitmap bm = new Bitmap(br.Write(textBox1.Text), 200, 100);
                 pictureBox1.Image = bm;
                 label1.Text = textBox1.Text;
-            }
-            else
-            {
-                label1.Text = "";
-                pictureBox1.Image = null;
-            }
             
         }
     }
