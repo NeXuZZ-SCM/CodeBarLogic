@@ -25,7 +25,7 @@ namespace Presentacion
 
                 BarcodeWriter br = new BarcodeWriter();
                 br.Format = BarcodeFormat.CODE_128;
-                Bitmap bm = new Bitmap(br.Write(textBox1.Text), 200, 100);
+                Bitmap bm = new Bitmap(br.Write(textBox1.Text), 400, 300);
                 pictureBox1.Image = bm;
                 label1.Text = textBox1.Text;
             

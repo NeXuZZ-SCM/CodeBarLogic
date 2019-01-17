@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_LogicBarCode"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Logic - Lector de codigo de Barras &amp; QR | Sguazzin Cristian M. | NeXuZZ |" Height="450" Width="569">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Supermercados-1024x768.jpg"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Left" Height="500" Margin="-90,-56,-125,-25" VerticalAlignment="Top" Width="776">
+            <Grid.Background>
+                <SolidColorBrush Color="Black" Opacity="0.45"/>
+            </Grid.Background>
+            <TextBox x:Name="txt_Code" HorizontalAlignment="Left" Height="30" Margin="256,261,0,0" VerticalAlignment="Top" Width="228" TextChanged="TextBox_TextChanged" TextAlignment="Center" FontSize="20" Background="#3FFFFFFF" Foreground="White"/>
+            <Image x:Name="img_QR" HorizontalAlignment="Left" Height="100" Margin="316,342,0,0" VerticalAlignment="Top" Width="100"/>
+            <Label Content="QR" HorizontalAlignment="Left" Margin="104,346,0,0" VerticalAlignment="Top" FontSize="72" Foreground="White" RenderTransformOrigin="0.523,0.5"/>
+            <Label Content="Generador" HorizontalAlignment="Left" Margin="107,332,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White"/>
+            <Label Content="Codigo Leido" HorizontalAlignment="Left" Margin="295,219,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White"/>
+        </Grid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="114" Margin="-122,14,-107,0" Stroke="Black" VerticalAlignment="Top" Width="790"/>
+        <Image x:Name="img_barCode" Height="100" Margin="218,22,0,0" VerticalAlignment="Top" Width="230" HorizontalAlignment="Left"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="17,22,0,0" VerticalAlignment="Top" Height="98" Width="132">
+            <Label.Background>
+                <ImageBrush ImageSource="Resources/lector-de-codigo-de-barras-argentina.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="" HorizontalAlignment="Left" Margin="438,22,0,0" VerticalAlignment="Top" Width="113" Height="98">
+            <Label.Background>
+                <ImageBrush ImageSource="Resources/lector-de-codigo-de-barras-godex-gs220.jpg"/>
+            </Label.Background>
+        </Label>
     </Grid>
 </Window>
