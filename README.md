@@ -1,7 +1,7 @@
 # CodeBarLogic
 Lógica Librería código de barras.
 
-Aplicacion que traduce un codigo de producto a su equivalente en Codigo de barra y codigo QR, usando libreria como ZXing (Zebra Crossing), programado en C# con VS2017. 
+Aplicación que traduce un código de producto a su equivalente en código de barra y código QR, usando librería como ZXing (Zebra Crossing), programado en C# con VS2017.
 
 ![Captura CODEBARLOGIC WPF](capturaCodeBarLogic.jpg)
 
